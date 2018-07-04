@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int a,i;
+    printf("enter the nummbers:");
+    scanf("%d",&a);
+    int *b=(int*)malloc(a*sizeof(int));
+
+    for(i=0;i<a;i++)
+    {
+
+      b[i]=i+1;
+    }
+
+    for(i=0;i<a;i++)
+    {
+
+        printf("%d",b[i]);
+    }
+}
+
+
+
+
+/*for calloc make change in 8th line i.e;
+int *b= (int*)calloc(a,sizeof(size int));
+
+
+for realloc afte 12th line enter;
+
+int *c=(int*c)realloc(b,sizeof(int));
+
+for free;
+    put free(name of the memory block  you want to free)
+
+
+
